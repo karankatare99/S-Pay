@@ -1,0 +1,22 @@
+{
+  "name": "@repo/webhook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.ts --bundle --platform=node --outdir=dist",
+    "dev": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.11",
+    "express": "^5.1.0"
+  },
+  "dependencies": {
+    "@repo/db": "*",
+    "@types/express": "^5.0.3"
+  }
+}
