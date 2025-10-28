@@ -30,21 +30,3 @@ It allows users to register, log in, add money to their balance, and view transa
 | Backend | Express.js (for bank webhook simulation) |
 | Monorepo Tools | [Turborepo](https://turbo.build/repo) |
 
----
-
-## 📁 Project Structure
-S-Pay/
-│
-├── apps/
-│ ├── web/ # Next.js frontend app
-│ └── bank-webhook/ # Express.js webhook receiver
-│
-├── packages/
-│ ├── db/ # Shared Prisma client & schema
-│ ├── store/ # Zustand stores (user, balance, etc.)
-│ └── ui/ # Shared UI components (Sidebar, Icons, etc.)
-│
-├── prisma/
-│ └── schema.prisma # Prisma schema
-│
-└── README.md
